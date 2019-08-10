@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+int x,p,amount,percentcut;
+scanf("%d %d",&x,&p);
+amount=x;
+percentcut=x;
+while(amount>=1)
+{
+amount=(amount-percentcut*(p/100));
+percentcut=amount;
+}
+printf("%d",amount);
+return 0;
+}
